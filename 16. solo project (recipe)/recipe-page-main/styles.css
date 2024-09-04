@@ -1,3 +1,46 @@
+/*
+Feedback 1:
+
+For the colors you can use css variables to make it easier to implement example:
+
+:root {
+  --background-color: hsl(30, 54%, 90%);
+  --white-color: hsl(0, 0%, 100%);
+  --purple-color: hsl(330, 100%, 98%);
+  --text-color: hsl(30, 10%, 34%);
+  --heading-color: hsl(332, 51%, 32%);
+  --list-marker-color: hsl(14, 45%, 36%);
+}
+
+You can then call the colors as :
+
+body {
+  background-color: var(--background-color);
+}
+
+.whitepart {
+  background-color: var(--white-color);
+}
+
+.purplepart {
+  background-color: var(--purple-color);
+}
+
+p {
+  color: var(--text-color);
+}
+
+h3 {
+  color: var(--heading-color);
+}
+
+ul li::marker {
+  color: var(--list-marker-color);
+}
+*/
+
+
+
 body{
     background-color: hsl(30, 54%, 90%);
 }
