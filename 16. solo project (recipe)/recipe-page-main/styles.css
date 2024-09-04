@@ -1,21 +1,28 @@
-body{
-    background-color: hsl(30, 54%, 90%);
+
+:root {
+  --background-color: hsl(30, 54%, 90%);
+  --white-color: hsl(0, 0%, 100%);
+  --purple-color: hsl(330, 100%, 98%);
+  --text-color: hsl(30, 10%, 34%);
+  --heading-color: hsl(332, 51%, 32%);
+  --list-marker-color: hsl(14, 45%, 36%);
 }
 
-.whitepart{
-    background-color: hsl(0, 0%, 100%);
+body{
+    background-color: var(--background-color);
+}
+
+.recipe-container{
+    background-color: var(--white-color);
     width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin: 15px auto;
     display: block;
     border-radius: 20px;
     padding: 40px;
 }
 
-.purplepart{
-    background-color: hsl(330, 100%, 98%);
+.highlight-box{
+    background-color: var(--purple-color);
     padding: 5px 10px;
     border-radius: 10px;
 }
@@ -29,19 +36,19 @@ img{
 }
 
 p{
-    color: hsl(30, 10%, 34%);
+    color: var(--text-color);
 }
 
 h3{
-    color: hsl(332, 51%, 32%);
+    color: var(--heading-color);
 }
 
 h2{
     color: hsl(14, 45%, 36%);
 }
 
-.purplepart ul li::marker{
-    color: hsl(332, 51%, 32%);
+.highlight-box ul li::marker{
+    color: var(--heading-color);
 }
 
 ul li span{
@@ -49,7 +56,7 @@ ul li span{
 }
 
 ul li::marker{
-    color: hsl(14, 45%, 36%);
+    color: var(--list-marker-color);
 }
 
 .squarelisting{
@@ -61,7 +68,7 @@ ul li{
 }
 
 ol li::marker {
-    color: hsl(14, 45%, 36%);
+    color: var(--list-marker-color);
     font-weight: bold;
 }
 
@@ -84,10 +91,7 @@ tr{
 
 td{
     text-align: left;
-    padding-left: 20px;
-    padding-right: 250px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 15px 250px 15px 20px;
 }
 
 .borderlines{
