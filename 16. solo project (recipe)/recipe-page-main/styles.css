@@ -52,8 +52,11 @@ ul li::marker{
     color: hsl(14, 45%, 36%);
 }
 
-ul li{
+.squarelisting{
     list-style: square;
+}
+
+ul li{
     padding-top: 15px;
 }
 
@@ -72,6 +75,7 @@ ol li span{
 
 table{
     border-collapse: collapse;
+    width: 100%;
 }
 
 tr{
@@ -81,7 +85,7 @@ tr{
 td{
     text-align: left;
     padding-left: 20px;
-    padding-right: 300px;
+    padding-right: 250px;
     padding-top: 15px;
     padding-bottom: 15px;
 }
