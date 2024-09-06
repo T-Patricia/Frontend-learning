@@ -2,7 +2,7 @@ body{
     background-color: hsl(30, 54%, 90%);
 }
 
-.whitepart{
+.content-container{
     background-color: hsl(0, 0%, 100%);
     width: 700px;
     margin-left: auto;
@@ -14,7 +14,7 @@ body{
     padding: 40px;
 }
 
-.purplepart{
+.highlight-box{
     background-color: hsl(330, 100%, 98%);
     padding: 5px 10px;
     border-radius: 10px;
@@ -131,4 +131,8 @@ td{
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
+  }
+
+  .footer{
+    text-align: center;
   }
