@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer{
+    text-align: center;
+}
+
+a{
+    color: #007185;
+    cursor: pointer;
+}
+
+.path-style{
+    color: #565959;
+}
+
+.title {
+    font-weight: lighter;
+}
+
+.main-img {
+    box-shadow: 0px 2px 5px lightgray;
+    width: 400px;
+    margin-right: 30px;
+}
+
+.rating-img{
+    width: 120px;
+}
+
+.flex-container{
+    display: flex;
+}
+
+.max-width{
+    max-width: 700px;
+}
