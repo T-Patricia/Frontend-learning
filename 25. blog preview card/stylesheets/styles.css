@@ -1,0 +1,96 @@
+body{
+    background-color:hsl(47, 88%, 63%);
+    margin: 0;
+    padding: 0;
+    color: hsl(0, 0%, 7%);
+    font-size: 16px;
+    font-family: "Figtree", sans-serif;
+}
+
+.blog-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 220px auto;
+    width: 336px;
+    height: fit-content;
+    padding: 24px;
+    background-color: hsl(0, 0%, 100%);
+    border: 1px solid hsl(0, 0%, 7%);
+    border-radius: 20px;
+    box-shadow: 10px 10px;
+}
+
+.blog-img{
+    height: 200px;
+    border-radius: 10px;
+    padding: 0;
+}
+
+.keyword-hashtag{
+    background-color: hsl(47, 88%, 63%);
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 800;
+    padding: 4px 12px;
+    border: none;
+    border-radius: 4px;
+    width: 82px;
+    text-align: center;
+    margin-top: 24px;
+}
+
+button:hover {
+    background-color: hsl(47, 88%, 50%);
+    cursor: pointer;
+  }
+  
+
+.date-text{
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.title-text{
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.title-text:hover{
+    color: hsl(47, 88%, 63%);
+    cursor: pointer;
+}
+
+.blog-text{
+    color: hsl(0, 0%, 42%);
+}
+
+#blogger-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.blogger-avatar{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+.blogger-name-tag{
+    font-weight: 800;
+    font-size: 14px;
+}
+
+footer{
+    font-size: 14px;
+    text-align: center;
+}
+
+a:link{
+    color: hsl(0, 0%, 7%);
+}
+
+a:visited{
+    color: hsl(0, 0%, 42%);
+}
