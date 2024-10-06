@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Summary about your results." />
+        <meta name="keywords" content="Frontend, HTML, CSS" />
+        <meta name="author" content="Telek Patrícia" />
+
+        <title>Frontend Mentor | Results summary component</title>
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/images/favicon-32x32.png"
+        />
+
+        <link rel="stylesheet" href="./styles/styles.css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+
+    <body>
+        <div class="main-content-container">
+            <div class="result-container">
+                <h1 class="result-title">Your Result</h1>
+
+                <div id="result-circle-container">
+                    <p class="result-percentage">76</p>
+                    <p class="maximum-percentage">of 100</p>
+                </div>
+
+                <h3 class="grading-title">Great</h3>
+                <p class="grading-feedback">
+                    You scored higher than 65% of the people who have taken
+                    these tests.
+                </p>
+            </div>
+
+            <div class="summary-container">
+                <h2 class="summary-title">Summary</h2>
+
+                <div class="summary-row-layout" id="reaction-row">
+                    <img
+                        class="icon-styling"
+                        src="./assets/images/icon-reaction.svg"
+                        alt="red lightning icon"
+                    />
+                    <p id="reaction-title">Reaction</p>
+                    <p class="score-positioning">
+                        80 <span class="grey-color-switcher">/ 100</span>
+                    </p>
+                </div>
+
+                <div class="summary-row-layout" id="memory-row">
+                    <img
+                        class="icon-styling"
+                        src="./assets/images/icon-memory.svg"
+                        alt="yellow brain icon"
+                    />
+                    <p id="memory-title">Memory</p>
+                    <p class="score-positioning">
+                        92 <span class="grey-color-switcher">/ 100</span>
+                    </p>
+                </div>
+
+                <div class="summary-row-layout memory-row" id="verbal-row">
+                    <img
+                        class="icon-styling"
+                        src="./assets/images/icon-verbal.svg"
+                        alt="blue speech bubble icon"
+                    />
+                    <p id="verbal-title">Verbal</p>
+                    <p class="score-positioning">
+                        61 <span class="grey-color-switcher">/ 100</span>
+                    </p>
+                </div>
+
+                <div class="summary-row-layout" id="visual-row">
+                    <img
+                        class="icon-styling"
+                        src="./assets/images/icon-visual.svg"
+                        alt="purple eye icon"
+                    />
+                    <p id="visual-title">Visual</p>
+                    <p class="score-positioning">
+                        72 <span class="grey-color-switcher">/ 100</span>
+                    </p>
+                </div>
+
+                <button>Continue</button>
+            </div>
+        </div>
+
+        <footer>
+            Challenge by
+            <a
+                href="https://www.frontendmentor.io?ref=challenge"
+                target="_blank"
+                >Frontend Mentor</a
+            >. Coded by <a href="https://github.com/T-Patricia">T-Patricia</a>.
+        </footer>
+    </body>
+</html>

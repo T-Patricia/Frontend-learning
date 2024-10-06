@@ -1,0 +1,225 @@
+/*Reseting*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+
+/*Adding custom colors*/
+:root {
+    --light-red: hsl(0, 100%, 67%);
+    --lighter-red: hwb(0 34% 0% / 0.1);
+    --orangey-yellow: hsl(39, 100%, 56%);
+    --lighter-orangey-yellow: hsla(39, 100%, 56%, 0.1);
+    --green-teal: hsl(166, 100%, 37%);
+    --lighter-green-teal: hsla(166, 100%, 37%, 0.1);
+    --cobalt-blue: hsl(234, 85%, 45%);
+    --lighter-cobalt-blue: hsla(234, 85%, 45%, 0.1);
+    --light-slate-blue: hsl(252, 100%, 67%);
+    --light-royal-blue: hsl(241, 81%, 54%);
+    --violet-blue: hsla(256, 72%, 46%, 1);
+    --persian-blue: hsla(241, 72%, 46%, 0);
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+    --grey-cs:hsla(224, 30%, 27%, 0.6);
+  }
+
+
+/*Styling for every element*/
+body{
+    font-family: "Hanken Grotesk", sans-serif;
+    background-color: var(--pale-blue);
+    text-align: center;
+}
+
+/*Flexbox container for purple and white part*/
+.main-content-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 250px;
+}
+
+/*Flexbox container for purple part*/
+.result-container{
+    background: linear-gradient(var(--light-slate-blue), var(--light-royal-blue));
+    width: 370px;
+    height: 510px;
+    color: var(--white);
+    border-radius: 30px;
+    text-align: center;
+}
+
+/*Purple part: Your result*/
+.result-title{
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--light-lavender);
+    margin: 40px auto 20px auto;
+}
+
+/*Purple part: Circle container*/
+#result-circle-container{
+    background: linear-gradient(var(--violet-blue), var(--persian-blue));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 200px;
+    height: 200px;  
+    border-radius: 50%;
+}
+
+/*Purple part: 76*/
+.result-percentage{
+    font-size: 78px;
+    font-weight: 700;
+    margin: 0;
+    color: var(--pale-blue);
+}
+
+/*Purple part: of 100*/
+.maximum-percentage{
+    font-size: 16px;
+    color: var(--light-lavender);
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+/*Purple part: Great*/
+.grading-title{
+    font-size: 32px;
+    color: var(--pale-blue);
+    margin-top: 40px;
+}
+
+/*Purple part: Feedback text*/
+.grading-feedback{
+    font-size: 18px;
+    color: var(--light-lavender);
+    width: 265px;
+    margin: 10px auto;
+}
+
+/*Flexbox container for white part*/
+.summary-container{
+    width: 370px;
+    height: 510px;
+    background-color: var(--white);
+    border-radius: 30px;
+    text-align: center;
+    color: var(--dark-gray-blue);
+    font-weight: 800;
+}
+
+/*White part: Summary*/
+.summary-title{
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+    padding: 40px 40px 20px 40px;
+}
+
+/*ALL-Making rows and setting the layout*/
+.summary-row-layout{
+    display: flex;
+    width: 285px;
+    padding: 15px 10px;
+    border-radius: 10px;
+    margin: 16px auto;
+}
+
+/*ALL-Icons styling*/
+.icon-styling{
+    padding-right: 15px;
+}
+
+/*ALL-Scores positioning and styling*/
+.score-positioning{
+    margin-left: auto;
+}
+
+/*RED-Reaction row styling*/
+#reaction-row{
+    /*background-color: hwb(0 34% 0% / 0.1);*/
+    
+    background-color: var(--lighter-red) ;
+}
+
+/*YELLOW-Memory row styling*/
+#memory-row{
+    background-color: var(--lighter-orangey-yellow);
+}
+
+/*GREEN-Verbal row styling*/
+#verbal-row{
+    background-color: var(--lighter-green-teal);
+}
+
+/*BLUE-Visual row styling*/
+#visual-row{
+    background-color: var(--lighter-cobalt-blue);
+}
+
+/*RED-Reaction color changer*/
+#reaction-title{
+    color: var(--light-red);
+}
+
+/*YELLOW-Memory color changer*/
+#memory-title{
+    color: var(--orangey-yellow);
+}
+
+/*GREEN-Verbal color changer*/
+#verbal-title{
+    color: var(--green-teal);
+}
+
+/*BLUE-Visual color changer*/
+#visual-title{
+    color: var(--cobalt-blue);
+}
+
+/*/100 switched to grey color*/
+.grey-color-switcher{
+    color: var(--grey-cs);
+}
+
+/*Continue button styling*/
+button{
+    background-color: var(--dark-gray-blue);
+    color: var(--white);
+    border-radius: 30px;
+    border: none;
+    width: 285px;
+    padding: 14px 100px;
+    display: block;
+    margin: 40px auto;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/*Hovering button styling*/
+button:hover{
+    cursor: pointer;
+    background: linear-gradient(var(--light-slate-blue), var(--light-royal-blue));
+}
+
+/*Styling footer part*/
+footer{
+    text-align: center;
+    margin-top: 120px;
+}
+
+/*Styling links*/
+a:link{
+    color: var(--violet-blue);
+}
+
+a:visited{
+    color: var(--persian-blue);
+}
