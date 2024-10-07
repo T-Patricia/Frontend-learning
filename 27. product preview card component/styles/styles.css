@@ -1,0 +1,138 @@
+/*Reseting*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Adding custom colors*/
+:root {
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+}
+
+/*ALL-body elements styling*/
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color:  hsl(30, 38%, 92%);
+    color: var(--very-dark-blue);
+}
+
+
+/*Main Flexbox - for the perfume and the information columns*/
+.product-card-container {
+    display: flex;
+    width: 920px;
+    border-radius: 20px;
+    margin: 188px auto;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.3);
+}
+
+/*LEFT- product styling*/
+.product-img {
+    width: 450px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    filter: brightness(90%);
+}
+
+/*RIGHT- description container, styling*/
+.description-container {
+    padding: 40px 70px;
+    text-align: left;
+    background-color: var(--white);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/*RIGHT- PERFUME category*/
+.product-category {
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    text-align: left;
+    color: var(--dark-grayish-blue);
+    margin-bottom: 30px;
+}
+
+/*RIGHT- Product name*/
+.product-name {
+    font-family: "Fraunces", serif;
+    font-size: 42px;
+    width: 260px;
+    margin-bottom: 30px;
+}
+
+/*RIGHT- Product description*/
+.product-description {
+    color: var(--dark-grayish-blue);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.8;
+    margin-bottom: 35px;
+}
+
+/*RIGHT- Flexbox for the prices*/
+.price-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+/*RIGHT- Discounted price styling*/
+.discount-price {
+    font-family: "Fraunces", serif;
+    color: var(--dark-cyan);
+    font-size: 50px;
+    font-weight: 700;
+    padding-right: 30px;
+}
+
+/*RIGHT- Original price styling*/
+.original-price {
+    color: var(--dark-grayish-blue);
+    text-decoration: line-through;
+}
+
+/*RIGHT- Add to cart button*/
+.cart-button {
+    background-color: var(--dark-cyan);
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--white);
+    width: 350px;
+    padding: 20px 70px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.3);
+}
+
+/*RIGHT- Add to cart icon*/
+#cart-icon {
+    padding-right: 15px;
+}
+
+/*RIGHT- Button hovering effect*/
+.cart-button:hover {
+    background-color: #1A4031;
+    cursor: pointer;
+}
+
+/*Styling footer part*/
+footer{
+    text-align: center;
+    margin-top: auto;
+}
+
+/*Styling links*/
+a:link{
+    color: var(--dark-cyan);
+}
+
+a:visited{
+    color: var(--dark-grayish-blue);
+}
