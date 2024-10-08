@@ -133,8 +133,6 @@ body{
 
 /*Rows styling individually*/
 #reaction-row{
-    /*background-color: hwb(0 34% 0% / 0.1);*/
-    
     background-color: var(--lighter-red) ;
 }
 
