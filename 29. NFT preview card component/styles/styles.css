@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --background-blue: hsl(217, 54%, 11%);
+    --card-blue: hsl(216, 50%, 16%);
+    --line-blue: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+
+    --font-small: 18px;
+    --font-medium: 20px;
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+    color: var(--white);
+    background-color: var(--background-blue);
+    text-align: left;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.main-content-container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--card-blue);
+    max-width: 350px;
+    margin:  auto;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.main-img {
+    background-image: url(../images/image-equilibrium.jpg);
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.main-img:hover {
+    background-color: var(--cyan);
+    background-image: url(../images/icon-view.svg);
+}
+
+.card-title {
+    font-size: var(--font-medium);
+    font-weight: 600;
+    margin: 32px 0 24px 0; 
+}
+
+.card-description {
+    font-size: var(--font-small);
+    font-weight: 300;
+    color: var(--soft-blue);
+}
+
+.data-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--line-blue);
+}
+
+.layout-container {
+    display: flex;
+    align-items: center;
+}
+
+.tags {
+    padding-left: 8px;
+}
+
+#price-tag {
+    color: var(--cyan);
+    font-weight: 600;
+}
+
+#time-tag {
+    color: var(--soft-blue);
+}
+
+#avatar-img {
+    width: 30px;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    margin-right: 14px;
+}
+
+.text-styling {
+    color: var(--soft-blue);
+}
+
+.author-container {
+    display: flex;
+    margin-top: 24px;
+}
+
+footer {
+    margin-top: auto;
+    text-align: center;
+}
+
+a:link {
+    color: var(--cyan);
+}
+
+a:visited {
+    color: var(--soft-blue);
+}
+
+.dynamic-elements:hover{
+    color: var(--cyan);
+    cursor: pointer;
+}
