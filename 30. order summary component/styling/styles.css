@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --bright-blue-transparent: hsla(245, 75%, 52%, 0.5);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+    font-family: "Red Hat Display", sans-serif;
+    text-align: center;
+    background-color: var(--pale-blue);
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* MAIN SECTION */
+/* Main content container AKA card*/
+.card-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 450px;
+    border-radius: 20px;
+    margin: auto;
+}
+
+#hero-img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-bottom: 40px;
+}
+
+/* Card content */
+.card-title {
+    font-size: 28px;
+    font-weight: 900;
+    color: var(--dark-blue);
+}
+
+.card-description {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--desaturated-blue);
+    margin: 28px 0;
+}
+
+/* Purchase data container: logo, plan type, price, change option */
+.purchase-container {
+    display: flex;
+    background-color: var(--pale-blue);
+    align-items: center;
+    margin: 0 auto ;
+    width: 390px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.layout-container{
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+}
+
+.music-icon {
+    filter: contrast(70%);
+    margin-right: 20px;
+}
+
+.plan-title {
+    font-size: 16px;
+    font-weight: 900;
+    color: var(--dark-blue);
+    margin-bottom: 4px;
+}
+
+.price-tag {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--desaturated-blue);
+}
+
+.change-anchor {
+    margin-right: 5px;
+    color: var(--bright-blue);
+    font-weight: 900;
+}
+
+/* Buttons + effects */
+button {
+    width: 390px;
+    font-family: inherit;
+    font-weight: 900;
+    font-size: 16px;
+    margin: auto;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.proceed-btn {
+    color: white;
+    background-color: var(--bright-blue);
+    padding: 16px;
+    border: none;
+    border-radius: 10px;
+    margin: 26px auto;
+}
+
+.proceed-btn:hover {
+    background-color: var(--bright-blue-transparent);
+}
+
+.cancel-btn {
+    color: var(--desaturated-blue);
+    background-color: white;
+    border: none;
+    margin: 6px auto 46px auto;
+}
+
+/* FOOTER SECTION */
+footer {
+    margin-top: auto;
+}
+
+footer a:link {
+    color: var(--bright-blue);
+}
+
+footer a:visited {
+    color: var(--desaturated-blue);
+}
