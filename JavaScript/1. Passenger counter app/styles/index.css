@@ -29,6 +29,7 @@ button {
   margin-bottom: 5px;
   border-radius: 5px;
   font-family: inherit;
+  cursor: pointer;
 }
 
 .app-container {
@@ -45,6 +46,7 @@ button {
 
 #increment-btn {
   background: lightcoral;
+  margin-bottom: 20px;
 }
 
 #save-btn {
@@ -59,3 +61,10 @@ footer {
   margin: auto auto 0 auto;
 }
 
+a:link {
+  color: lightcoral;
+}
+
+a:visited {
+  color: #373C42;
+}
