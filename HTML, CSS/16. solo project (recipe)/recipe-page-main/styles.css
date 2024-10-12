@@ -1,0 +1,138 @@
+body{
+    background-color: hsl(30, 54%, 90%);
+}
+
+.content-container{
+    background-color: hsl(0, 0%, 100%);
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: block;
+    border-radius: 20px;
+    padding: 40px;
+}
+
+.highlight-box{
+    background-color: hsl(330, 100%, 98%);
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+img{
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 20px;
+}
+
+p{
+    color: hsl(30, 10%, 34%);
+}
+
+h3{
+    color: hsl(332, 51%, 32%);
+}
+
+h2{
+    color: hsl(14, 45%, 36%);
+}
+
+.purplepart ul li::marker{
+    color: hsl(332, 51%, 32%);
+}
+
+ul li span{
+    font-weight: bolder;
+}
+
+ul li::marker{
+    color: hsl(14, 45%, 36%);
+}
+
+.squarelisting{
+    list-style: square;
+}
+
+ul li{
+    padding-top: 15px;
+}
+
+ol li::marker {
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+}
+
+ol li{
+    padding: 5px 14px;
+}
+
+ol li span{
+    font-weight: bold;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+tr{
+    border-bottom: 1px solid lightgray;
+}
+
+td{
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 250px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.borderlines{
+    border-top: 1px solid lightgray;
+    padding-top: 20px;
+}
+
+.p-left{
+    text-align: left;
+}
+
+.browncolor-bold{
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+}
+
+.young-serif-regular {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .outfit-400 {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: hsl(30, 10%, 34%);
+  }
+
+  .outfit-600 {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: hsl(30, 10%, 34%)
+  }
+
+  .outfit-700 {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  .footer{
+    text-align: center;
+  }
