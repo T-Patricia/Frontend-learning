@@ -9,6 +9,7 @@ function increment() {
     countEl.innerText = count
 }
 
+// adding save function
 function save() {
     saveEl.textContent += count + " - "
     countEl.textContent = 0
