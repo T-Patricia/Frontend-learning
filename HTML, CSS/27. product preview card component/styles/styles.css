@@ -1,3 +1,5 @@
+/* Review : good job on consistent styling */
+
 /*Reseting*/
 * {
     margin: 0;
@@ -23,6 +25,10 @@ body {
 
 
 /*Main Flexbox - for the perfume and the information columns*/
+/*
+    Review: margin: 188px is not the correct way to center this, I know you have already done this before
+    so my question is how would you center this better?
+*/
 .product-card-container {
     display: flex;
     width: 920px;
@@ -33,6 +39,10 @@ body {
 
 /*LEFT- product styling*/
 .product-img {
+    /*
+    Review: a good thing to keep in mind for future, try to make fallback for image doesn't load, think for example
+    about a background color.
+    */
     width: 450px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -50,6 +60,7 @@ body {
 
 /*RIGHT- PERFUME category*/
 .product-category {
+    /* Review good use of text-transform and spacing */
     text-transform: uppercase;
     letter-spacing: 7px;
     text-align: left;
@@ -60,6 +71,10 @@ body {
 /*RIGHT- Product name*/
 .product-name {
     font-family: "Fraunces", serif;
+    /*
+    Review: try to look in REM for font-sizes, its a good thing to start using it for accessibility as this will be
+    a standard in development.
+    */
     font-size: 42px;
     width: 260px;
     margin-bottom: 30px;
