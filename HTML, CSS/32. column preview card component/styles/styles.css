@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --paragraphs-white: hsla(0, 0%, 100%, 0.75);
+    --background-headings-buttons: hsl(0, 0%, 95%);
+}
+
+body {
+    background-color: var(--background-headings-buttons);
+    font-family: "Lexend Deca", sans-serif;
+    color: var(--background-headings-buttons);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    height: 100vh;
+    width: 1200px;
+}
+
+.sedan-section {
+    background-color: var(--bright-orange);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.suv-section {
+    background-color: var(--dark-cyan);
+}
+
+.luxury-section {
+   background-color: var(--very-dark-cyan); 
+   border-top-right-radius: 10px;
+   border-bottom-right-radius: 10px;
+}
+
+.vehicle-icon {
+    margin: 50px auto 40px 40px;
+}
+
+.vehicle-title {
+    font-family: "Big Shoulders Display", sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 40px;
+    margin: 0 auto 40px 40px;
+}
+
+.vehicle-description {
+    color: var(--paragraphs-white);
+    font-weight: 400;
+    font-size: 15px;
+    margin: auto 90px 130px 50px;
+    line-height: 1.8;
+}
+
+button {
+    font-family: inherit;
+    font-size: 16px;
+    margin: auto auto 50px 60px;
+    background-color: var(--background-headings-buttons);
+    border: 1px solid var(--background-headings-buttons);
+    border-radius: 26px;
+    padding: 16px 30px;
+    cursor: pointer;
+}
+
+.sedan-btn {
+    color: var(--bright-orange);
+}
+
+.suv-btn {
+    color: var(--dark-cyan);
+}
+
+.luxury-btn {
+    color: var(--very-dark-cyan);
+}
+
+button:hover {
+    color: var(--background-headings-buttons);
+    background-color: inherit;
+}
+
+footer {
+    text-align: center;
+    color: var(--bright-orange);
+}
+
+a:link {
+    color: var(--dark-cyan);
+}
+
+a:visited {
+    color: var(--very-dark-cyan);
+}
