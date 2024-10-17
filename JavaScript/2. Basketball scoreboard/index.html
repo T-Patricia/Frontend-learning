@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Basketball dynamic scoreboard" />
+        <meta name="keywords" content="Frontend, HTML, CSS, JavaScript" />
+        <meta name="author" content="Telek Patrícia" />
+
+        <title>Basketball scoreboard</title>
+
+        <link rel="stylesheet" href="./styles/index.css">
+
+        <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="./images/favicon-32x32.png"
+    />
+    </head>
+
+    <body>
+        <div class="container">
+            <div>
+                <h3 class="title">HOME</h3>
+                <p class="result-box" id="result-home">0</p>
+                <div class="btn-container">
+                    <button class="add-button" onclick="addOneHome()">+1</button>
+                    <button class="add-button" onclick="addTwoHome()">+2</button>
+                    <button class="add-button" onclick="addThreeHome()">+3</button>
+                </div>
+            </div>
+            <div>
+                <h3 class="title">GUEST</h3>
+                <p class="result-box" id="result-guest">0</p>
+                <div class="btn-container">
+                    <button class="add-button" onclick="addOneGuest()">+1</button>
+                    <button class="add-button" onclick="addTwoGuest()">+2</button>
+                    <button class="add-button" onclick="addThreeGuest()">+3</button>
+                </div>
+            </div>
+        </div>
+        <button class="new-btn" onclick="newgame()">NEW GAME</button>
+
+
+        <footer>
+            <p>
+                Solo project by
+                <a
+                    href="https://v2.scrimba.com"
+                    target="_blank"
+                    >Scrimba</a
+                >.
+            </p>
+            <p>
+                Coded by <a href="https://github.com/T-Patricia">T-Patricia</a>.
+            </p>
+        </footer>
+        <script src="./scripts/index.js"></script>
+    </body>
+</html>
