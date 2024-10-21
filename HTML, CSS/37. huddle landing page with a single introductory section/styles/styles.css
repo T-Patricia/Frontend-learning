@@ -1,0 +1,136 @@
+/* reseting */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* colors */
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+}
+
+body {
+    background-image: url(../images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--violet);
+    color: white;
+    height: 100vh;
+    font-family: "Open Sans", sans-serif;;
+}
+
+.main-content-container {
+    margin: 100px;
+}
+
+/* left part */
+#hero {
+    width: 200px;
+    margin: 50px auto 80px;
+}
+
+.mid-container {
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+}
+
+.browser-img {
+    width: 900px;
+    height: auto;
+}
+
+/* description part */
+.description-container {
+    width: 700px;
+    padding: 80px
+}
+
+.title {
+    margin-bottom: 20px;
+    font-size: 46px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+}
+
+.description {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.register-btn {
+    background-color: white;
+    font-family: inherit;
+    font-size: 20px;
+    color: var(--violet);
+    padding: 18px 80px;
+    border: none;
+    border-radius: 40px;
+    box-shadow: 4px 4px 9px rgb(0 0 0 / 0.3);
+
+}
+
+.register-btn:hover {
+    cursor: pointer;
+    background-color: var(--soft-magenta);
+    color: white;
+}
+
+/* icons */
+.icon-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 80px;
+}
+
+.icon {
+    width: 36px;
+    height: 36px;
+    margin-right: 20px;
+    padding: 8px;
+    border: 1px solid white;
+    border-radius: 50%;
+    fill: white;
+}
+
+.icon:hover {
+    cursor: pointer;
+    border: 1px solid var(--soft-magenta);
+    fill: var(--soft-magenta);
+}
+
+/* footer */
+footer {
+    margin-top: auto;
+    text-align: center;
+}
+
+a:link {
+    color: var(--soft-magenta);
+}
+
+a:visited {
+    color: white;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .mid-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .browser-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .description-container {
+        width: 100%;
+        padding: 40px;
+    }
+}
