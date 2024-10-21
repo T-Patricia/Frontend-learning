@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cyan: hsl(179, 62%, 43%);
+    --light-cyan: hsla(179, 62%, 43%, 0.7);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+    --mid-lighter-gray: hsla(203, 44%, 93%, 0.9);
+    --lighter-gray: hsla(203, 44%, 93%, 0.6);
+    --grayish-blue: hsl(218, 22%, 67%);
+
+}
+
+body {
+    background-color: var(--light-gray);
+    font-family: "Karla", sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* positioning main content */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 700px;
+    background-color: white;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 0.2);
+}
+
+/* container slicing into 3 pieces */
+.top-container {
+    padding: 50px 60px 30px;
+}
+
+.bottom-container {
+    display: flex;
+}
+
+.container {
+    width: 350px;
+    padding: 50px;
+}
+
+.left-container {
+    background-color: var(--cyan);
+    border-bottom-left-radius: 10px;
+
+}
+
+.right-container {
+    background-color: var(--light-cyan);
+    border-bottom-right-radius: 10px;
+}
+
+/* top white styling */
+.title {
+    color: var(--cyan);
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.title-description {
+    color: var(--bright-yellow);
+    font-size: 18px;
+    margin-bottom: 16px;
+
+}
+
+.top-paragraph {
+    color: var(--grayish-blue);
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+
+/* bottom left cyan container styling */
+.secondary-title {
+    margin-bottom: 20px;
+}
+
+.price-line {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.price-tag {
+    font-size: 32px;
+    font-weight: 700; 
+}
+
+.price-periodicity {
+    color: var(--lighter-gray);
+    margin-left: 10px;
+}
+
+.price-description {
+    color: var(--mid-lighter-gray);
+    margin-bottom: 30px;
+}
+
+.sign-btn {
+    width: 250px;
+    color: white;
+    background-color: var(--bright-yellow);
+    border: none;
+    border-radius: 6px;
+    padding: 14px;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 0.2);
+    font-family: inherit;
+    font-size: 18px;
+}
+
+.sign-btn:hover {
+    cursor: pointer;
+    background-color: white;
+    color: var(--bright-yellow);
+}
+
+/* bottom right cyanish container styling */
+ul {
+    list-style-type: none;
+    line-height: 1.4;
+    color: var(--mid-lighter-gray);
+    font-size: 14px;
+}
+
+/* footer styling */
+footer {
+    margin-top: auto;
+    text-align: center;
+}
+
+a:link {
+    color: var(--cyan);
+}
+
+a:visited {
+    color: var(--bright-yellow);
+}
+
+/* responsiveness */
+@media (max-width: 768px) {
+    .bottom-container {
+        flex-direction: column;
+    }
+
+    .left-container,
+    .right-container {
+        width: 100%;
+    }
