@@ -19,6 +19,9 @@ body {
     font-family: "Montserrat", sans-serif;
     background-color:  hsl(30, 38%, 92%);
     color: var(--very-dark-blue);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -27,7 +30,8 @@ body {
     display: flex;
     width: 920px;
     border-radius: 20px;
-    margin: 188px auto;
+    margin: auto;
+    /* margin: 188px auto; */
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.3);
 }
 
@@ -37,6 +41,7 @@ body {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     filter: brightness(90%);
+    background-color: var(--cream);
 }
 
 /*RIGHT- description container, styling*/
@@ -125,7 +130,6 @@ body {
 /*Styling footer part*/
 footer{
     text-align: center;
-    margin-top: auto;
 }
 
 /*Styling links*/
