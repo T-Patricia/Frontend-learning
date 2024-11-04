@@ -31,12 +31,13 @@ function getRandomCard() {
 }
 
 // creating a function to start the game
-// player set to alive
+// player set to alive AND does not have Blackjack
 // declaring 1st and 2nd card
 // declaring cards array and a sum variable
 // indenting another function 
 function startGame() {
     isAlive = true
+    hasBlackJack = false
     let firstCard = getRandomCard()
     let secondCard = getRandomCard()
     cards = [firstCard, secondCard]
