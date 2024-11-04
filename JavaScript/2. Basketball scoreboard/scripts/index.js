@@ -48,6 +48,8 @@ function newGame() {
     resultHome.innerText = 0
     countHome = 0
     countGuest = 0
+    resultHome.style.color = "#F94F6D"
+    resultGuest.style.color = "#F94F6D"
 }
 
 // Leading team highlight function
