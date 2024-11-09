@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* COLORS */
+    --background: #1C1C1C;
+    --card-background: #1F2937;
+    --title-color: #FFFFFF;
+    --paragraph-color: #D5D4D8;
+    --accent-color: #10B981;
+    --password-container: #2F3E53;
+    /* FONTS */
+    --karla: "Karla", sans-serif;
+    --inter: "Inter", serif;
+    font-size: 16px;
+    line-height: 40px;
+}
+
+body {
+   background-color: var(--background); 
+   color: var(--title-color);
+   font-family: var(--inter);
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+}
+
+main {
+    height: 85vh;
+}
+
+.card {
+    width: 550px;
+    height: 550px;
+    background-color: var(--card-background);
+    padding: 115px 50px;
+    font-size: 1rem;
+    margin: auto;
+}
+
+.title {
+    font-size: 2.5rem;
+    width: 350px;
+    margin-bottom: 10px;
+}
+
+.accent {
+    color: var(--accent-color);
+}
+
+.description {
+    color: var(--paragraph-color);
+    font-size: 1.25rem;
+    margin-bottom: 50px;
+}
+
+.btn-generate {
+    background-color: var(--accent-color);
+    color: var(--title-color);
+    padding: 10px 16px;
+    border: none;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 1rem;
+    margin-bottom: 35px;
+}
+
+
+.password-section {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    border-top: 1px solid var(--password-container);
+    padding: 35px 0;
+}
+
+.containers {
+    width: 210px;
+    background-color: var(--password-container);
+    border: 1px solid var(--password-container);
+    border-radius: 5px;
+    text-align: center;
+    color: var(--accent-color);
+    height: 40px;
+}
+
+.containers:hover{
+    color: var(--paragraph-color);
+    background-image: linear-gradient(to right, var(--accent-color) , var(--password-container));
+    border: 1px solid var(--paragraph-color);
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    margin-top: auto;
+}
+
+a:link {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+a:link {
+    color: var(--password-container);
+    text-decoration: none;
+}
