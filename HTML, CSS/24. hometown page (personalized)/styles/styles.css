@@ -1,0 +1,210 @@
+:root {
+    --green: #606c38;
+    --background: #606c389f;
+    --trans-green: #606c38c4;
+    --deep-green: #283618;
+    --deep-orange: #C14002;
+    --trans-orange: #c13e0288;
+    --white: #FFFFFF;
+    --white-ish: #F1FAEE;
+    font-size: 16px;
+}
+
+@font-face {
+    font-family: "Autumn";
+    src: url(../fonts/autumn-in-november/Autumn\ in\ November.ttf);
+}
+
+body {
+    margin: 0;
+    text-align: center;
+    background-color: var(--background);
+    font-family: Arial, Helvetica, sans-serif;
+   }
+
+.main-container {
+    width: 45rem;
+    height: 75rem;
+    background-color: var(--white-ish);
+    border: 0.5rem solid var(--white);
+    border-radius: 15px;
+    margin: 3rem auto;
+    color: var(--deep-green);
+}
+
+/* HERO SECTION */
+#hero{
+    background-image: url("../images/Budapest-bg.jpg");
+    background-size: cover;
+    border-top-left-radius: 0.6rem;
+    border-top-right-radius: 0.6rem;
+    height: 23.5rem;
+    width: 45rem;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-title{
+    background-color: var(--trans-green);
+    width: 14rem;
+    padding: 0.4rem 0.75rem;
+    border-radius: 0.6rem;
+}
+
+#hero-paragraph{
+    background-color: var(--white);
+    color: var(--trans-green);
+    width: 23.75rem;
+    padding: 0.4rem 1.8rem;
+    border-radius: 0.625rem;
+    font-size: 1.125rem;
+}
+
+/* ACTIVITIES SECTION */
+.activities-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.activities-title{
+    font-size: 1.5rem;
+    margin: 2.4rem auto 3.375rem auto;
+}
+
+#accent {
+    font-family: "Autumn";
+    color: var(--deep-orange);
+    font-size: 2rem;
+}
+
+.activity-icons {
+    border-radius: 20%;
+    height: 7.5rem;
+}
+
+.activity-icons:hover, .card-avatar:hover{
+    box-shadow: 0.3rem 0.3rem 0.625rem var(--deep-green);
+
+}
+
+main p{
+    width: 11rem;
+}
+
+/* CARD SECTION */
+.guide-card{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 31rem;
+    margin: 5rem auto;
+    background-color: var(--background);
+    border-bottom: 0.5rem solid var(--green);
+    border-radius: 1rem;
+}
+
+.card-avatar {
+    width: 9.5rem;
+    border-radius: 0.625rem;
+}
+
+.card-title{
+    font-size: 1.5rem;
+}
+
+.card-paragraph {
+    font-style: italic;
+    width: 12.5rem;
+}
+
+/* FOOTER SECTION */
+footer {
+    font-weight: 600;
+    text-align: center;
+    color: var(--deep-green);
+}
+
+footer a {
+    font-family: "Autumn";
+    text-decoration: none;
+}
+
+footer a:link {
+    color: var(--deep-orange);
+
+}
+
+footer a:visited {
+    color: var(--deep-green);
+}
+
+/* RESPONSIVE */
+/* Medium screens (tablets) */
+@media (max-width: 768px) {
+    .main-container {
+        width: 90%;
+        padding: 0.625rem; 
+    }
+    
+    .activities-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.25rem; 
+    }
+
+    .guide-card {
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+/* Small screens (mobile phones) */
+@media (max-width: 480px) {
+    .main-container {
+        width: 100%;
+        margin: 1.25rem auto; 
+        padding: 0.625rem; 
+    }
+
+    #hero-title {
+        font-size: 1.8rem;
+    }
+
+    #hero-paragraph {
+        width: 90%;
+        font-size: 1rem;
+    }
+
+    .activities-container {
+        flex-direction: column;
+        gap: 0.9375rem; 
+        padding: 0;
+    }
+
+    .activities {
+        width: 100%;
+        text-align: center;
+    }
+
+    .activity-icons {
+        width: 5rem; 
+        height: auto;
+    }
+
+    .guide-card {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .card-avatar {
+        width: 6.25rem; 
+        margin-bottom: 0.625rem; 
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
