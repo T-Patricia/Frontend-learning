@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Convert length/volume/mass units here" />
+        <meta name="keywords" content="Frontend, HTML, CSS, JavaScript" />
+        <meta name="author" content="Telek Patrícia" />
+
+        <title>Unit converter</title>
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+
+        <link rel="stylesheet" href="./styles/index.css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Marvel:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <main class="main-container">
+            <div class="top-container">
+                <h1>Metric/Imperial Unit Conversion</h1>
+                <input class="input-field" id="input-el" type="number" aria-label="Input value for unit conversion">
+                <button class="convert-btn" id="convert-btn">Convert</button>
+            </div>
+    
+            <div class="bottom-container">
+                <div class="converting-blocks">
+                    <h2>Length (Meter/Feet)</h2>
+                    <p class="converting-outputs" id="length-output"></p>
+                </div>
+
+                <div class="converting-blocks">
+                    <h2>Volume (Liters/Gallons)</h2>
+                    <p class="converting-outputs" id="volume-output"></p>
+                </div>
+
+                <div class="converting-blocks">
+                    <h2>Mass (Kilograms/Pounds)</h2>
+                    <p class="converting-outputs" id="mass-output"></p>
+                </div>
+            </div>
+        </main>
+
+        <script src="./scripts/index.js"></script>
+    </body>
+</html>

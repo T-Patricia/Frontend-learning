@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background: #1C1C1C;
+    --top-background: #6943FF;
+    --bottom-background: #F4F4F4;
+    --block-background: #FFFFFF;
+    --input-border: #B295FF;
+    --heading-txt: #5A537B;
+    --measurement-txt: #353535;
+    --btn-txt: #3D3D3D;
+    --font-size: 16px;
+}
+
+body {
+    font-family: "Inter", serif;
+    background-color: var(--background);
+    text-align: center;
+    display: flex;
+    height: 100vh;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    color: var(--bottom-background);
+    width: 550px;
+    height: 800px;
+    margin: auto;
+}
+
+/* TOP CONTAINER */
+.top-container {
+    background-color: var(--top-background);
+    height: 300px;
+    font-weight: 800;
+    padding: 35px 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 1.75rem;
+    margin-bottom: 30px;    
+}
+
+.input-field {
+    font-size: 3.625rem;
+    background-color: var(--top-background);
+    max-width: 140px;
+    border: 2px solid var(--input-border);
+    border-radius: 5px;
+    color: var(--block-background);
+    font-family: inherit;
+    font-weight: 800;
+    text-align: center;
+    padding: 16px 30px;
+    margin: auto;
+}
+
+/* Remove the number input spinner in webkit browsers */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Remove the number input spinner in Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.convert-btn{
+    width: 120px;
+    color: var(--btn-txt);
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 1rem;
+    background-color: var(--block-background);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 30px auto;
+    cursor: pointer;
+}
+
+.convert-btn:hover {
+    color: var(--heading-txt);
+}
+
+/* BOTTOM CONTAINER */
+.bottom-container {
+    background-color: var(--bottom-background);
+    color: var(--heading-txt);
+    padding: 70px 25px;
+}
+
+.converting-blocks{
+    height: 110px;
+    padding: 30px 70px;
+    margin-bottom: 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: var(--block-background);
+}
+
+h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.converting-outputs {
+    font-size: 0.875rem;
+    color: var(--measurement-txt);
+    margin-top: 10px;
+}
