@@ -1,0 +1,102 @@
+/* general styling */
+body {
+    text-align: center;
+    margin: 0;
+    font-family: "Roboto", serif;
+    font-size: 21px;
+}
+
+/* layout */
+.container {
+    width: 570px;
+    margin: 0 auto;
+}
+
+/* typography */
+h1, 
+h2 {
+    font-weight: 300;
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 42px;
+    border-top: 1px solid #C4C4C4;
+    border-bottom: 1px solid #C4C4C4;
+    padding: 30px 0;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 36px;
+    /* font-weight: 900; */
+    margin-bottom: 0;
+}
+
+h1 .bold-text {
+    font-size: 80px;
+}
+
+h2 .bold-text {
+    font-size: 60px;
+}
+
+.bold-text {
+    font-weight: 900;
+    display: block;
+    color: #99D930;
+}
+
+.small-text {
+    font-size: 16px;
+    margin-top: 6px;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.accent {
+    color: #99D930;
+    font-weight: 900;
+}
+
+/* links */
+a {
+    color: #99D930;
+    font-weight: 900;
+}
+
+a:hover, 
+a:focus {
+    color: #131313;
+}
+
+.link-btn {
+    text-decoration: none;
+    color: #252525;
+    background-color: #99D930;
+    padding: 10px 25px;
+    display: inline-block;
+    margin-top: 40px;
+}
+
+.link-btn:hover,
+.link-btn:focus{
+    color: #FFF;
+    background-color: #252525;
+}
+
+/* section stylings */
+.bg-containers{
+    padding: 100px 0;
+}
+
+.dark-background {
+    background-color: #252525;
+    color: #FFF;
+}
