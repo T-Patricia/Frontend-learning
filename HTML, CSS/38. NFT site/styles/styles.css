@@ -40,15 +40,6 @@ a:hover, a:active{
     color: #d4b44c;
 }
 
-/* 
-Challenge:
-1. Refactor the CSS for these button-style
-   links using two classes on each link
-   element.
-⚠️ Think what to call the new class you
-   will need to create.
-*/
-
 .btn{
     padding: 10px 19px;
     border-radius: 4.6px;
