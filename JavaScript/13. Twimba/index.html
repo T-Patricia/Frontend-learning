@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Twitter clone with similar functions" />
+        <meta name="keywords" content="Frontend, HTML, CSS, JavaScript" />
+        <meta name="author" content="Telek Patrícia" />
+
+        <title>Twimba 🐤</title>
+
+		<!-- css -->
+		<link rel="stylesheet" href="./styles/index.css">
+		<!-- google fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap" rel="stylesheet">
+		<!-- font awesome CDN-->
+		<link 
+			rel="stylesheet" 
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+			integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+			crossorigin="anonymous" 
+			referrerpolicy="no-referrer" />
+		<!-- favicons -->
+		<link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+		<link rel="manifest" href="./images/site.webmanifest">
+	</head>
+
+	<body>
+		<header>
+			<h1>Twimba</h1>
+		</header>
+		<main>
+			<div class="tweet-input-area">
+				<img src="images/scrimbalogo.png" class="profile-pic">
+				<textarea 
+					id="tweet-input" 
+					placeholder="What's happening?"></textarea>
+			</div>
+
+			<button id="tweet-btn">Tweet</button>
+			<div class="feed" id="feed"></div>
+		</main>
+		<!-- script type modified to module -->
+		<script src="./scripts/index.js" type="module"></script>
+	</body>
+
+</html>
