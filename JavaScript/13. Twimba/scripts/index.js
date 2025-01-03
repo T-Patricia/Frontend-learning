@@ -115,7 +115,7 @@ function getFeedHtml(){
 
         // declaring variable as place to store later class - LIKE
         let likeIconClass = ''
-        // changin class, if isLiked = true
+        // changing class, if isLiked = true
         if (tweet.isLiked){
             likeIconClass = 'liked'
         }
@@ -123,7 +123,7 @@ function getFeedHtml(){
         // declaring variable as place to store later class - RETWEET
         let retweetIconClass = ''
         if(tweet.isRetweeted){
-            // changin class, if isRetweeted = true
+            // changing class, if isRetweeted = true
             retweetIconClass = 'retweeted'
         }
 
