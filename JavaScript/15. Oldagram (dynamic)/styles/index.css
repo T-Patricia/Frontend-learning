@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Source Sans 3", serif;
+}
+
+.container {
+    width: 400px;
+    display: block;
+    margin: 20px auto;
+}
+
+/* header */
+#hero-logo {
+    width: 150px;
+}
+
+.user-pfp {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #C6C6C6;
+    padding: 16px;
+}
+
+/* user banners */
+.bold-text {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.light-text {
+    font-size: 16px;
+}
+
+.user-container{
+    display: flex;
+    padding: 10px;
+}
+
+.user-container .user-pfp {
+    margin-right: 10px;
+}
+
+.post-pic {
+    width: 395px;
+    height: 395px;
+}
+
+.action-icons {
+    width: 25px;
+    margin: 10px 6px;
+}
+
+.number-of-likes {
+    margin: 0 6px 12px
+}
+
+.post-content {
+    display: flex;
+    padding: 0 0 40px 6px ;
+}
+
+.post-content .bold-text {
+    padding-right: 6px;
+}
