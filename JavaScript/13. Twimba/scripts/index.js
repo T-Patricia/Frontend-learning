@@ -113,19 +113,11 @@ function getFeedHtml(){
     // forEach() method to run through our data.js tweet by tweet
     tweetsData.forEach(function(tweet){
 
-        // declaring variable as place to store later class - LIKE
-        let likeIconClass = ''
-        // changing class, if isLiked = true
-        if (tweet.isLiked){
-            likeIconClass = 'liked'
-        }
+        // ternary operator changing the class from none to like and back
+        const likeIconClass = tweet.isLiked ? 'liked' : ''
 
-        // declaring variable as place to store later class - RETWEET
-        let retweetIconClass = ''
-        if(tweet.isRetweeted){
-            // changing class, if isRetweeted = true
-            retweetIconClass = 'retweeted'
-        }
+        // ternary operator changing the class from none to retweeted and back
+        const retweetIconClass = tweet.isRetweeted ? 'retweeted' : ''
 
         // declaring variable to hold replies
         let repliesHtml = ''
