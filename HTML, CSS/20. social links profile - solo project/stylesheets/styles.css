@@ -1,34 +1,27 @@
-body{
+body {
     background-color: hsl(0, 0%, 8%);
     text-align: center  ;
     font-family: "Inter", sans-serif;
 }
 
-.inter-400 {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-}
-
-h1{
+h1 {
     color: white;
     font-weight: normal;
     font-size: 25px;
 }
 
-h2{
+h2 {
     color: hsl(75, 94%, 57%);
     font-weight: normal;
     font-size: 14px;
 }
 
-p{
+p {
     color: white;
     font-size: 14px;
 }
 
-button{
+button {
     background-color: hsl(0, 0%, 20%);
     font-family: Inter;
     color: white;
@@ -42,14 +35,31 @@ main a:link {
     text-decoration: none;
     color: white;
     cursor: pointer;
-  }
+}
   
 main a:visited {
     text-decoration: none;
     color: white;
-  }
+}
 
-.avatar{
+a:link {
+    text-decoration: none;
+    color: hsl(75, 94%, 57%);
+}
+  
+a:visited {
+    text-decoration: none;
+    color: hsl(75, 94%, 57%);
+}
+
+.inter-400 {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.avatar {
     width: 80px;
     border-radius: 40px;
     margin-top: 35px;
@@ -68,18 +78,8 @@ main a:visited {
     border-radius: 10px;
 }
 
-#footer-links{
+#footer-links {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
-a:link {
-    text-decoration: none;
-    color: hsl(75, 94%, 57%);
-  }
-  
-a:visited {
-    text-decoration: none;
-    color: hsl(75, 94%, 57%);
-  }
