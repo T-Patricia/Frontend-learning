@@ -29,13 +29,16 @@ body{
     font-family: "Hanken Grotesk", sans-serif;
     background-color: var(--pale-blue);
     text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /*Flexbox container for main content*/
 .main-content-container{
     display: flex;
     justify-content: center;
-    margin-top: 250px;
+    margin: auto;
 }
 
 /*Container for Your Result part + styling*/
@@ -191,7 +194,7 @@ button:hover{
 /*Styling footer part*/
 footer{
     text-align: center;
-    margin-top: 120px;
+    margin-bottom: 20px;
 }
 
 a:link{
