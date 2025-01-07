@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Add funky scrimba backgrounds to your avatar." />
+        <meta name="keywords" content="Frontend, HTML, CSS" />
+        <meta name="author" content="Telek Patrícia" />
+        
+        <title>🎆 Scrimbafy Me 🎆</title>
+
+        <!-- google fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,900&display=swap" rel="stylesheet">
+        <!-- css -->
+        <link href="./styles/styles.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- intro section -->
+        <section class="intro">
+            <h1>Turn <strong>your picture</strong> into an iconic <strong>Scrimba avatar</strong></h1>
+            <span class="beta-text">Currently in Beta</span>
+            <p class="top-text">Powered by Scrimba</p>
+        </section>
+        
+        <!-- main, form section -->
+        <main class="main-content">
+            <img class="img-main" src="./images/avatar.png" alt="My Scrimba avatar.">
+            <h2>Scrimbafy.me</h2>
+            <span class="subheading">Liven up your profile pic</span>
+            
+            <p>The colorful and iconic Scrimba avatars are no longer just for members of the Scrimba team and its Avengers-caliber group of code reviewers. You can Scrimbafy your photo today!</p>
+            
+            <form>
+                <input type="text" required placeholder="Name" aria-label="Name">
+                <input type="email" required  placeholder="Email" aria-label="Email">
+                <input type="file" required accept="image/png, image/jpg" aria-label="Choose file">
+                <button class="btn btn-primary">Submit</button>
+            </form>   
+            <p class="fine-print">We'll never share your information without permission</p>
+        </main>
+    </body>
+</html>
