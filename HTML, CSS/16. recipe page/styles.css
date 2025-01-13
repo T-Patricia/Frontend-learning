@@ -133,6 +133,7 @@ td{
     font-style: normal;
   }
 
-  .footer{
+.footer{
     text-align: center;
+    font-family: inherit;
   }
