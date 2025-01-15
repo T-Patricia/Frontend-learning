@@ -1,0 +1,137 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 400;
+}
+
+:root {
+    font-size: 16px;
+}
+
+/* selectors */
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "Smythe", serif;
+} 
+
+/* classes */
+.header-container {
+    background: url(../images/bgimg.png) no-repeat center;
+    min-width: 600px;
+    padding: 60px;
+    color: white;
+    margin: 0 auto 30px;
+}
+
+.item-container {
+    max-width: 600px;
+    display: flex;
+    margin: auto;
+    padding: 40px 20px;
+    align-items: center;
+    border-bottom: 1px solid #D2D2D2;
+}
+
+.item-description {
+    padding-left: 30px;
+    line-height: 1.5;
+}
+
+.item-name {
+    font-size: 1.75rem;
+}
+
+.item-ingredients {
+    color: #8B8B8B;
+}
+
+.item-price {
+    font-size: 1.25rem;
+}
+
+.plus-icon {
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+    font-size: 2rem;
+    height: 50px;
+    width: 50px;
+    padding: 4px;
+    border: 1px solid #DEDEDE;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0 16px 0 auto;
+    cursor: pointer;
+}
+
+.summary-container {
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+#summary-title {
+    text-align: center;
+    margin-top: 40px auto 60px auto;
+}
+
+.summary-row {
+    display: flex;
+    align-items: center;
+}
+
+.summary-item-name {
+    font-size: 28px;
+    padding-right: 16px;
+}
+
+.summary-remove-tag {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+    color: #BBBBBB;
+    cursor: pointer;
+}
+
+.summary-item-price {
+    font-size: 20px;
+    margin-left: auto;
+}
+
+#total-row {
+    /* display: flex; */
+    border-top: 3px solid #393333;
+    margin: 16px auto;
+    padding: 16px 0;
+}
+
+.total-title {
+    font-size: 28px;
+}
+
+.total-price {
+    font-size: 20px;
+    margin-left: auto;
+}
+
+#complete-btn {
+    font-weight: 700;
+    color: #FFFFFF;
+    background-color: #16DB99;
+    font-size: 16px;
+    width: 100%;
+    padding: 20px 0;
+    border: none;
+    border-radius: 3px;
+}
+
+.hidden {
+    display: none;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
