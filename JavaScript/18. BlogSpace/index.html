@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Create and view blog posts on this page. Submit new posts and explore the latest entries on various topics." />
+        <meta name="keywords" content="Frontend, HTML, CSS, JavaScript, API" />
+        <meta name="author" content="Telek Patrícia" />
+
+        <title>✒️ BlogSpace ✒️</title>
+        <!-- font -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200;400;700&display=swap" rel="stylesheet">
+        <!-- css -->
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <nav>
+            <h3>BlogSpace</h3>
+        </nav>
+        <fieldset>
+            <legend>Create a new blog post</legend>
+            
+            <form id="new-post">
+                <label for="post-title">Title</label>
+                <input 
+                    type="text" 
+                    name="title" 
+                    id="post-title" 
+                    placeholder="Enter new blog title...">
+                    
+                <label for="post-body">Body</label>
+                <textarea 
+                    id="post-body" 
+                    placeholder="Enter new blog text..."></textarea>
+            <button type="submit">Post</button>
+            </form>
+
+        </fieldset>
+        <div id="blog-list"></div>
+        <!-- javascript -->
+        <script src="index.js"></script>
+    </body>
+</html>
