@@ -8,6 +8,7 @@ const summaryTitle = document.getElementById("summary-title");
 const totalRow = document.getElementById("total-row");
 const totalPrice = document.getElementById("total-price");
 const completeBtn = document.getElementById("complete-btn")
+let cartItems = []; 
 let summaryHTML = "";
 let total = 0;
 
@@ -50,8 +51,23 @@ render()
 document.addEventListener('click', function(e){
     if (e.target.dataset.plus){
         handlePlusBtnClick(e.target.dataset.plus)
+    } 
+    else if (e.target.dataset.removeID){
+        handleRemoveBtn(e.target.dataset.removeID)
     }
 })
+
+function refreshSumHTML(){
+        // Create the summaryHTML based on cartItems array
+        summaryHTML = cartItems.map(function(menuItem) {
+            return `
+            <div class="summary-row" data-id="${menuItem.id}">
+                <p class="summary-item-name">${menuItem.name}</p>
+                <a class="summary-remove-tag" data-removeID="${menuItem.id}">remove</a>
+                <p class="summary-item-price">$${menuItem.price}</p>
+            </div>`;
+        }).join('');
+}
 
 // plus icon function
 function handlePlusBtnClick(itemID){
@@ -69,15 +85,61 @@ function handlePlusBtnClick(itemID){
     // counting total price
     total += targetMenuItem.price
 
-    // item boilerplate
-    summaryHTML += `
-        <div class="summary-row" data-id="${targetMenuItem.id}">
-            <p class="summary-item-name">${targetMenuItem.name}</p>
-            <a href="#" class="summary-remove-tag">remove</a>
-            <p class="summary-item-price">$${targetMenuItem.price}</p>
-        </div>`;
+    // adding object to cartItems array
+    cartItems.push({
+        name: targetMenuItem.name,
+        price: targetMenuItem.price,
+        id: targetMenuItem.id
+    })
+    
+    refreshSumHTML()
 
     //updating the DOM once 
     summaryRow.innerHTML = summaryHTML
     totalPrice.textContent = `$${total}`
+}
+
+// removing element function
+function handleRemoveBtn(itemID){
+    // Convert itemID to a number
+    const idToRemove = Number(itemID);
+
+    // Find the index of the item to be removed
+    const itemIndex = cartItems.findIndex(function (menuItem) {
+        return menuItem.id === idToRemove;
+    });
+
+
+
+    // counting total price
+    total -= targetMenuItem.price;
+
+    // Update the total price in the DOM
+    totalPrice.textContent = `$${total}`;
+
+    // remove object to cartItems array
+    cartItems.pop({
+        name: targetMenuItem.name,
+        price: targetMenuItem.price,
+        id: targetMenuItem.id
+    })
+
+    refreshSumHTML()
+
+
+    // If no items left, hide summary title, total row, and button
+    if (total === 0) {
+        summaryTitle.classList.add("hidden");
+        totalRow.classList.add("hidden");
+        totalRow.classList.remove("flex");
+        completeBtn.classList.add("hidden");
+    }
+
+
+    console.log(summaryHTML)
+
+    // updatng DOM
+    summaryRow.innerHTML = summaryHTML
+    totalPrice.textContent = `$${total}`
+
 }

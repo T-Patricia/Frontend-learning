@@ -95,6 +95,14 @@ body {
     cursor: pointer;
 }
 
+.summary-remove-tag:hover {
+    background-color: lightcoral;
+    color: white;
+    font-weight: 700;
+    padding: 0.7em;
+    border-radius: 10px;
+}
+
 .summary-item-price {
     font-size: 20px;
     margin-left: auto;
