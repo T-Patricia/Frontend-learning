@@ -87,19 +87,36 @@
                  </div>
                  
                  <!-- default display hidden -->
-                 <button id="complete-btn" class="hidden">Complete order</button>
+                 <button id="complete-btn" class="btn hidden">Complete order</button>
             </section>
 
             <section>
                 <!-- modal form - default hidden -->
-                <!-- <form>
-                    <input type="text" placeholder="Enter your name">
-                    <input type="number" placeholder="Enter your card number">
-                    <input type="number" placeholder="Enter CVV">
-                    <button type="submit">Pay</button>
-                </form> -->
+                <form class="modal hidden" id="modal">
+                    <h1 class="modal-title">Enter card details</h1>
+                    <input 
+                        id="name"
+                        class="input-containers" 
+                        type="text" 
+                        placeholder="Enter your name" 
+                        minlength="4"
+                        required>
+                    <input 
+                        class="input-containers" 
+                        type="number" 
+                        placeholder="Enter your card number"
+                        pattern="\d{4} \d{4} \d{4} \d{4}"
+                        minlength="16"
+                        required>
+                    <input 
+                        class="input-containers" 
+                        type="number" 
+                        placeholder="Enter CVV" 
+                        maxlength="3" required>
+                    <button id="pay-btn" class="btn" type="submit">Pay</button>
+                </form>
 
-                <div>
+                <div id="feedback-container">
                     <!-- div to render feedback message to user - default hidden -->
                 </div>
             </section>

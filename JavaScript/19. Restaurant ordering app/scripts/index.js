@@ -7,7 +7,10 @@ const summaryRow = document.getElementById("summary-row")
 const summaryTitle = document.getElementById("summary-title");
 const totalRow = document.getElementById("total-row");
 const totalPrice = document.getElementById("total-price");
-const completeBtn = document.getElementById("complete-btn")
+const completeBtn = document.getElementById("complete-btn");
+const modal = document.getElementById("modal");
+const payBtn = document.getElementById("pay-btn");
+const feedbackContainer = document.getElementById("feedback-container");
 let cartItems = []; 
 let summaryHTML = "";
 let total = 0;
@@ -141,5 +144,21 @@ function handleRemoveBtn(itemID){
     // updatng DOM
     summaryRow.innerHTML = summaryHTML
     totalPrice.textContent = `$${total}`
-
 }
+
+// eventListener for complete btn
+completeBtn.addEventListener('click', function(){
+    modal.classList.remove("hidden")
+    modal.classList.add("modal-active-state")
+})
+
+// eventListener for pay btn
+payBtn.addEventListener('click', function(){
+    modal.classList.add("hidden")
+    modal.classList.remove("modal-active-state")
+    // ide még feedback
+    feedbackContainer.innerHTML = `
+        <h2>Thanks, ${name}! Your order is on its way!<h2>
+    `
+    console.log('clcked')
+})

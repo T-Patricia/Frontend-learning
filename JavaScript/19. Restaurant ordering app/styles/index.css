@@ -124,15 +124,25 @@ body {
     margin-left: auto;
 }
 
-#complete-btn {
+.btn {
     font-weight: 700;
     color: #FFFFFF;
     background-color: #16DB99;
     font-size: 16px;
+    border: 3px solid #16DB99;
+    border-radius: 5px;
+}
+
+#complete-btn {
     width: 100%;
-    padding: 20px 0;
-    border: none;
-    border-radius: 3px;
+    padding: 18px 0;
+}
+
+#complete-btn:hover,
+#pay-btn:hover {
+    cursor: pointer;
+    background-color: #FFFFFF;
+    color: #16DB99;
 }
 
 .hidden {
@@ -142,4 +152,55 @@ body {
 .flex {
     display: flex;
     align-items: center;
+}
+
+.modal {
+    height: 550px;
+    width: 550px;
+    border-radius: 5px;
+    position: fixed;
+    margin: auto;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #FFFFFF;
+}
+
+.modal-title {
+    padding: 2em 0;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.input-containers {
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 20px;
+    color: #757575;
+    height: 70px;
+    margin: 0 24px 20px 24px;
+    padding: 16px;
+    border: 1px solid #757575;
+    border-radius: 5px;
+}
+
+.input-containers:active,
+.input-containers:focus {
+    border: 1px solid #16DB99;
+}
+
+#pay-btn {
+    width: 90%;
+    padding: 18px 0;
+    margin: auto;
+}
+
+/* add this to modal if active */
+.modal-active-state {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 100px 6px #D6D6D6 ;
 }
