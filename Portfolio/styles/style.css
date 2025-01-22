@@ -293,13 +293,11 @@ header {
     }
 }
 
-
-
 /*  My services section  */
 
 .my-services {
     background-color: var(--color-dark);
-    background-image: url(../img/services-bg7.jpg);
+    background-image: url(../img/backgrounds/services-bg7.jpg);
     background-size: cover;
     /* background-blend-mode: normal; */
     color: var(--color-light);
@@ -502,7 +500,8 @@ header {
     margin-right: auto;
 }
 
-.portfolio-item-individual a {
+.portfolio-item-individual a,
+.portfolio-item-individual span {
     margin-right: 0.8em;
     font-size: 1rem;
     border: 1px solid var(--color-dark);
@@ -510,11 +509,28 @@ header {
     padding: 0.25em 1em;
     text-decoration: none;
     font-weight: 600;
+}
 
+.portfolio-item-individual span {
+    color: var(--color-light);
+    background-color: var(--color-accent);
+    border: 1px solid var(--color-accent);
 }
 
 .portfolio-item-individual a:hover {
     color: var(--color-light);
     background-color: var(--color-accent);
     border: 1px solid var(--color-accent);
+}
+
+.portfolio-item-individual > .tag-container {
+    margin-top: 2em;
+    margin-left: auto;
+}
+
+/* choose light or dark mode */
+.portfolio-item-individual span:hover {
+    color: var(--color-accent);
+    background-color: var(--color-dark);
+    border: 1px solid var(--color-dark);
 }
