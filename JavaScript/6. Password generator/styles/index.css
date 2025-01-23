@@ -12,6 +12,7 @@
     --paragraph-color: #D5D4D8;
     --accent-color: #10B981;
     --password-container: #2F3E53;
+    --footer-background: #424242;
     /* FONTS */
     --karla: "Karla", sans-serif;
     --inter: "Inter", serif;
@@ -68,6 +69,9 @@ main {
     margin-bottom: 35px;
 }
 
+.btn-generate:hover{
+    cursor: pointer;
+}
 
 .password-section {
     display: flex;
@@ -97,6 +101,8 @@ main {
 footer {
     text-align: center;
     margin-top: auto;
+    padding: 6px;
+    background-color: var(--footer-background);
 }
 
 a:link {
@@ -104,7 +110,7 @@ a:link {
     text-decoration: none;
 }
 
-a:link {
-    color: var(--password-container);
+a:visited {
+    color: var(--background);
     text-decoration: none;
 }
