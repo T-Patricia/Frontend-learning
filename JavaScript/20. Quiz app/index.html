@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Check out my super Quiz App, choose from 4 different topic, select how many questions you want to answer." />
+    <meta name="keywords" content="Frontend, HTML, CSS, JavaScript, Quiz App" />
+    <meta name="author" content="Telek Patrícia" />
+    <!-- title -->
+    <title>Quiz App</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./stylesheets/styles.css">
+    <!-- google icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!-- fonts -->
+    <!-- favicon -->
+</head>
+
+<body>
+    <!-- Quiz config -->
+    <div class="config-container">
+        <h2 class="config-title">Quiz Configuration</h2>
+
+        <div class="config-option">
+            <h4 class="option-title">Select Category</h4>
+            <div class="category-options">
+                <button class="category-option active">Programming</button>
+                <button class="category-option">Geography</button>
+                <button class="category-option">Mathematics</button>
+                <button class="category-option">Entertainment</button>
+            </div>
+        </div>
+
+        <!-- Number of Questions -->
+        <div class="config-option">
+            <h4 class="option-title">Number of questions</h4>
+            <div class="question-options">
+                <button class="question-option active">5</button>
+                <button class="question-option">10</button>
+                <button class="question-option">15</button>
+                <button class="question-option">20</button>
+                <button class="question-option">25</button>
+            </div>
+        </div>
+        <!-- Button to start quiz -->
+        <button class="start-quiz-btn">Start Quiz</button>
+    </div>
+
+    <!-- Quiz container -->
+    <div class="quiz-container">
+        <header class="quiz-header">
+            <h2 class="quiz-title">Quiz Application</h2>
+            <div class="quiz-timer">
+                <span class="material-symbols-rounded">timer</span>
+                <p class="time-duration"></p>
+            </div>
+        </header>
+
+        <div class="quiz-content">
+            <h1 class="question-text"></h1>
+            <ul class="answer-options"></ul>
+        </div>
+
+        <div class="quiz-footer">
+            <p class="question-status"></p>
+            <button class="next-question-btn">
+                Next
+                <span class="material-symbols-rounded">arrow_right_alt</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Result container -->
+    <div class="result-container">
+        <img class="result-img" src="./assets/quiz-over.png" alt="celebrating icon">
+        <h2 class="result-title">Quiz Completed!</h2>
+        <p class="result-message"></p>
+        <button class="try-again-btn">Try Again</button>
+    </div>
+
+    <!-- javascript -->
+    <script src="./data/questions.js"></script>
+    <script src="./scripts/index.js" type="module"></script>
+</body>
+
+</html>
