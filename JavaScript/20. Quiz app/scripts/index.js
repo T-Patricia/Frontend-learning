@@ -16,6 +16,7 @@ let numberOfQuestions = 5;
 let currentQuestion = null;
 const questionsIndexHistory = [];
 let correctAnswersCount = 0;
+let currentQuestionNumber = 1;
 
 // Display the quiz result and hide the quiz container
 const showQuizResult = () => {
@@ -64,7 +65,7 @@ const getRandomQuestion = () => {
     const availableQuestions = categoryQuestions.filter((_, index) => !questionsIndexHistory.includes(index));
     const randomQuestion = availableQuestions[Math.floor(Math.random() * availableQuestions.length)];
 
-    questionsIndexHistory.push(categoryQuestions.indexOf(randomQuestion))
+    questionsIndexHistory.push(categoryQuestions.indexOf(randomQuestion));
     return randomQuestion;
 }
 
@@ -79,7 +80,7 @@ const highlightCorrectAnswer = () => {
 // Handles the user's choice of answer
 const handleAnswer = (option, answerIndex) => {
     clearInterval(timer);
-
+    
     const isCorrect = currentQuestion.correctAnswer === answerIndex;
     option.classList.add(isCorrect ? 'correct' : 'incorrect');
 
@@ -109,8 +110,7 @@ const renderQuestion = () => {
     quizContainer.querySelector(".quiz-timer").style.background = "var(--black-bg)";
 
     document.querySelector(".question-text").textContent = currentQuestion.question;
-    questionStatus.innerHTML = `<b>${questionsIndexHistory.length}</b> of <b>${numberOfQuestions}</b> Questions`;
-
+    questionStatus.innerHTML = `<b>${currentQuestionNumber}</b> of <b>${numberOfQuestions}</b> Questions`;
 
     // Create option <li> elements and append them, and add click even listeners
     currentQuestion.options.forEach((option, index) =>{
@@ -126,6 +126,7 @@ const renderQuestion = () => {
 const startQuiz = () => {
     configContainer.style.display = "none";
     quizContainer.style.display = "block";
+    currentQuestionNumber = 1;
 
     // Update quiz category and number of question
     quizCategory = configContainer.querySelector(".category-option.active").textContent;
@@ -145,14 +146,18 @@ document.querySelectorAll(".category-option, .question-option").forEach(option =
 // Reset the quiz and return to the configuration container
 const resetQuiz = () => {
     resetTimer();
+    currentQuestionNumber = 1;
     correctAnswersCount = 0;
     questionsIndexHistory.length = 0;
     configContainer.style.display = "block";
     resultContainer.style.display = "none";
 }
 
-renderQuestion();
+// Modified to increment currentQuestionNumber
+nextQuestionBtn.addEventListener("click", () => {
+    currentQuestionNumber++;
+    renderQuestion();
+});
 
-nextQuestionBtn.addEventListener("click", renderQuestion);
 document.querySelector(".try-again-btn").addEventListener("click", resetQuiz);
-document.querySelector(".start-quiz-btn").addEventListener("click", startQuiz)
+document.querySelector(".start-quiz-btn").addEventListener("click", startQuiz);
