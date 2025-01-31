@@ -8,7 +8,7 @@ const timerDisplay = document.querySelector(".time-duration");
 const resultContainer = document.querySelector(".result-container");
 
 // Quiz state variables
-const QUIZ_TIME_LIMIT = 5;
+const QUIZ_TIME_LIMIT = 25;
 let currentTime = QUIZ_TIME_LIMIT;
 let timer = null;
 let quizCategory = "programming";
