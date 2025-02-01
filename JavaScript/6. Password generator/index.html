@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- meta tags -->
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
             name="description"
-            content="Generate a secure, customized password instantly by selecting your preferred length, then copy it with a single click for easy use."
+            content="Generate a secure, 8-digits password by using the generate button, then copy to your clipboard with a single click on the randomized password for easy use."
         />
-        <meta name="keywords" content="Frontend, HTML, CSS, JavaScript" />
+        <meta name="keywords" content="Frontend, HTML, CSS, JavaScript, Password Generator" />
         <meta name="author" content="Telek Patrícia" />
 
+        <!-- title -->
         <title>Password generator</title>
 
+        <!-- css -->
         <link rel="stylesheet" href="./styles/index.css" />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="./images/favicon-32x32.png"
-        />
-
+        <!-- favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="./images/favicon_io/site.webmanifest">
+        <!-- google fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -27,27 +29,43 @@
             rel="stylesheet"
         />
     </head>
+
     <body>
+        <!-- main -->
         <main class="card">
             <h1 class="title">
                 Generate a <span class="accent">random password</span>
             </h1>
             <p class="description">Never use an insecure password again.</p>
-            <button class="btn-generate" onclick="generatePasword()">Generate passwords</button>
+            <button class="btn-generate" onclick="generatePasword()">
+                Generate passwords
+            </button>
 
             <div class="password-section">
-                <p class="containers" id="password-one" onclick="copy(passwordOne)"></p>
-                <p class="containers" id="password-two" onclick="copy(passwordTwo)"></p>
+                <p
+                    class="containers"
+                    id="password-one"
+                    onclick="copy(passwordOne)"
+                ></p>
+                <p
+                    class="containers"
+                    id="password-two"
+                    onclick="copy(passwordTwo)"
+                ></p>
             </div>
         </main>
 
+        <!-- footer -->
         <footer>
             <p>
                 Solo project by
                 <a href="https://v2.scrimba.com" target="_blank">Scrimba</a>
             </p>
             <p>
-                Coded by <a href="https://github.com/T-Patricia" target="_blank">T-Patricia</a>.
+                Coded by
+                <a href="https://github.com/T-Patricia" target="_blank"
+                    >T-Patricia</a
+                >.
             </p>
         </footer>
         <script src="./scripts/index.js"></script>

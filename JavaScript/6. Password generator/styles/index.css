@@ -13,6 +13,7 @@
     --accent-color: #10B981;
     --password-container: #2F3E53;
     --footer-background: #424242;
+    --link-visited: #a1d6c4;
     /* FONTS */
     --karla: "Karla", sans-serif;
     --inter: "Inter", serif;
@@ -111,6 +112,6 @@ a:link {
 }
 
 a:visited {
-    color: var(--background);
+    color: var(--link-visited);
     text-decoration: none;
 }
