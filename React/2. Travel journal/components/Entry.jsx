@@ -1,7 +1,3 @@
-/**
- * Challenge: Fix our component! 😱
- */
-
 export default function Entry(props) {
     return (
         <article className="journal-entry">
@@ -15,7 +11,7 @@ export default function Entry(props) {
             <div className="info-container">
                 <img 
                     className="marker"
-                    src="../images/marker.png" 
+                    src="./images/marker.png" 
                     alt="map marker icon"
                 />
                 <span className="country">{props.country}</span>
