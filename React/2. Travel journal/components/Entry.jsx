@@ -20,7 +20,6 @@ export default function Entry(props) {
                 <p className="trip-dates">{props.dates}</p>
                 <p className="entry-text">{props.text}</p>
             </div>
-            
         </article>
     )
 }
