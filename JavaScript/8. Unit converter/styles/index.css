@@ -1,9 +1,11 @@
+/* reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* custom colors */
 :root {
     --background: #1C1C1C;
     --top-background: #6943FF;
