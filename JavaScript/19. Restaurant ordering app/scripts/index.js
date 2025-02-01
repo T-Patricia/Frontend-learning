@@ -112,8 +112,6 @@ function handleRemoveBtn(itemID){
         return menuItem.id === idToRemove;
     });
 
-
-
     // counting total price
     total -= targetMenuItem.price;
 
