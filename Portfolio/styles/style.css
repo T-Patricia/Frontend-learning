@@ -4,8 +4,7 @@
     box-sizing: border-box;
 }
 
-/* Custom Properties, update these for your own design */
-
+/* Custom Properties */
 :root {
     --ff-primary: 'Lora', serif;
     --ff-secondary: 'Roboto Slab', serif;
@@ -36,12 +35,9 @@
 }
 
 /* General styles */
-
-/* endable this to add smooth scrolling */
-/* html {
+html {
     scroll-behavior: smooth;
-} */
-
+}
 
 body {
     background: var(--color-light);
@@ -69,7 +65,6 @@ strong { font-weight: var(--fw-bold) }
 }
 
 /* Buttons */
-
 .btn {
     display: inline-block;
     padding: 1em 2.5em;
@@ -89,7 +84,6 @@ strong { font-weight: var(--fw-bold) }
 }
 
 /* Typography */
-
 h1,
 h2,
 h3 {
@@ -136,14 +130,13 @@ h3 { font-size: var(--fs-h3) }
 }
 
 /* header */
-
 header {
     display: flex;
     justify-content: space-between;
     padding: 1em;
 }
 
-.logo {
+.header__logo {
     max-width: 100px;
 }
 
@@ -156,7 +149,6 @@ header {
     left: 0;
     right: 0;
     z-index: 100;
-    
     transform: translateX(100%);
     transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
 }
@@ -202,31 +194,27 @@ header {
     position: fixed;
 }
 
-.nav-open .hamburger {
+.nav-open .header__hamburger {
     transform: rotate(.625turn);
 }
 
-.nav-open .hamburger::before {
+.nav-open .header__hamburger::before {
     transform: rotate(90deg) translateX(-6px);
 }
 
-.nav-open .hamburger::after {
+.nav-open .header__hamburger::after {
     opacity: 0;
 }
 
 
-
-
-
-
-.hamburger {
+.header__hamburger {
     display: block;
     position: relative;
 }
 
-.hamburger,
-.hamburger::before,
-.hamburger::after {
+.header__hamburger,
+.header__hamburger::before,
+.header__hamburger::after {
     background: var(--color-accent);
     width: 2em;
     height: 3px;
@@ -234,21 +222,19 @@ header {
     transition: transform 250ms ease-in-out;
 }
 
-
-.hamburger::before,
-.hamburger::after {
+.header__hamburger::before,
+.header__hamburger::after {
     content: '';
     position: absolute;
     left: 0;
     right: 0;
 }
 
-.hamburger::before { top: 6px; }
-.hamburger::after { bottom: 6px; }
+.header__hamburger::before { top: 6px; }
+.header__hamburger::after { bottom: 6px; }
 
 
 /*  Intro section  */
-
 .intro {
     position: relative;
 }
@@ -294,12 +280,11 @@ header {
 }
 
 /*  My services section  */
-
 .my-services {
     background-color: var(--color-dark);
     background-image: url(../img/backgrounds/services-bg7.jpg);
     background-size: cover;
-    /* background-blend-mode: normal; */
+    background-blend-mode: normal;
     color: var(--color-light);
     text-align: center;
 }
@@ -345,7 +330,6 @@ header {
     }
 }
 
-
 .about-me {
     max-width: 1000px;
     margin: 0 auto;
@@ -388,7 +372,6 @@ header {
 }
 
 /* My Work */
-
 .my-work {
     background-color: var(--color-dark);
     color: var(--color-light);
@@ -406,7 +389,6 @@ header {
 .portfolio__item {
     background: var(--color-accent);
     overflow: hidden;
-
 }
 
 .portfolio__img {
@@ -428,16 +410,13 @@ header {
     opacity: .5;
 }
 
-
 /* footer */
-
 .footer {
     background: #111;
     color: var(--color-accent);
     text-align: center;
     padding: 2.5em 0;
     font-size: var(--fs-h3);
-
 }
 
 .footer a { 
@@ -474,9 +453,7 @@ header {
     padding: .5em;
 }
 
-
 /* Individual portfolio item styles */
-
 .portfolio-intro {
     padding: 5em 2em 2em 2em;
 }
@@ -528,7 +505,6 @@ header {
     margin-left: auto;
 }
 
-/* choose light or dark mode */
 .portfolio-item-individual span:hover {
     color: var(--color-accent);
     background-color: var(--color-dark);
