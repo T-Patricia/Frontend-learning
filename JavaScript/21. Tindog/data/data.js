@@ -11,7 +11,7 @@ const dogs = [
         name: "Bella",
         avatar: "./images/dog-bella.jpg",
         age: 43,
-        bio: "Yup, that's my owner. U can meet him if you want",
+        bio: "Yup, that's my owner. U can meet him if you want.",
         alt: "Brown dog named Bella wearing glasses with her owner and both looking into the camera with confident expression.",
         hasBeenSwiped: false,
         hasBeenLiked: false
