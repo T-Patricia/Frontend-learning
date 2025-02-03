@@ -1,0 +1,113 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* general */
+body {
+    font-family: "Poppins", serif;
+    height: 100vh;
+    display: flex;
+}
+
+/* main content container */
+.container {
+    width: 550px;
+    display: block;
+    margin: auto;
+    box-shadow: 0 10px 20px #E9E9EA;
+}
+
+/* header */
+.header {
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+}
+
+.header-icon {
+    padding: 20px;
+}
+
+/* pfp with text */
+.tindog-pfp-container {
+    position: relative;
+}
+
+.tindog-pfp {
+    width: 540px;
+    height: 750px;
+    display: block;
+    margin: auto;
+    border-radius: 15px;
+}
+
+.tindog-info,
+.tindog-bio {
+    position: absolute;
+}
+
+.tindog-info {
+    top: 87%;
+    left: 4%;
+    color: #F8F8F8;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2.25rem;
+}
+
+.tindog-bio {
+    top: 93%;
+    left: 4%;
+    color: #B7B7B7;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+/* action btns */
+.action-btns-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    height: 140px;
+}
+
+.action-btns {
+    border-radius: 50%;
+    box-shadow: 0 10px 20px #E9E9EA;
+    padding: 33px;
+    overflow: visible;
+    cursor: pointer;
+}
+
+#dislike-btn:focus,
+#dislike-btn:hover {
+    background-color: #FFE7EF;
+    box-shadow: 0 10px 20px #EDD9DF;
+
+}
+
+#like-btn:focus,
+#like-btn:hover {
+    background-color: #DBFFF4;
+    box-shadow: 0 10px 20px #CCF1E6;
+}
+
+/* badges */
+.tindog-badge {
+    transform: rotate(-30deg);
+    position: absolute;
+    top: 8%;
+    left: 4%;
+    height: 115px;
+    width: 230px;
+}
+
+#like-badge,
+#nope-badge {
+    display: none;
+}
