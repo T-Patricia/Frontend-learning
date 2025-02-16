@@ -158,5 +158,5 @@ payBtn.addEventListener('click', function(){
     feedbackContainer.innerHTML = `
         <h2>Thanks, ${name}! Your order is on its way!<h2>
     `
-    console.log('clcked')
+    console.log('clicked')
 })
