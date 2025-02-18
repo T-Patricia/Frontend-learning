@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Play the classic, but simplified War card game online! Draw cards, compare values, and see who wins in this simple yet exciting two-player game. Keep track of remaining cards and enjoy the battle!" />
+        <meta name="keywords" content="Frontend, HTML, CSS, JavaScript, APIs" />
+        <meta name="author" content="Telek Patrícia" />
+
+        <title>Game of War</title>
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./styles/index.css">
+    </head>
+    <body>
+        <div class="top">
+            <button id="new-deck">New Deck</button>
+            <p id="remaining"></p>
+        </div>
+        <h2 id="header">Game of War</h2>
+        <h3 id="computer-score">Computer score: 0</h3>
+        <div id="cards">
+            <div class="card-slot"></div>
+            <div class="card-slot"></div>
+        </div>
+        <h3 id="my-score">My score: 0</h3>
+        <button id="draw-cards" class="draw">Draw</button>
+        <script src="./scripts/index.js" type="module"></script>
+    </body>
+</html>
